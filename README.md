@@ -1,28 +1,26 @@
-# InviteGiveaway
-Commission for Internal
-
-## Usage (server wise)
-1. Clone the repo
-2. Run start.bat
-
-## Configuration
-- .env located in root (token, bot id, database url, buxloot api key)
-- config.json located in root (points_per_hour, server_id)
-- site_issues.json located in src
-- bot_issues.json located in src
+# BuxlootBot
+The source code for buxloot.com's discord bot 
 
 ```env
 TOKEN=""
 ID=""
 DATABASE_URL=""
 API_KEY=""
+LOGTAIL_KEY=""
 ```
 
 ```json
 {
+{
     "points_per_hour": 1,
-    "server_id": "",
-    "keywords": [],
+    "server_id": "1203876218810925157",
+    "keywords": [
+        "earn",
+        "R$",
+        "buxloot",
+        "at",
+        "buxloot.com"
+    ],
     "multiplier": {
         "every": 30,
         "multiply": 0.1
@@ -30,10 +28,11 @@ API_KEY=""
     "keyword_threshold": 3,
     "minimum_withdrawal": 1,
     "bot_status": "buxloot.com",
-    "staff": ["1056818884398809118"],
+    "moderators": [],
+    "administators": ["1056818884398809118"],
     "bot_commands_channel": "1193385316732637254",
-    "withdraw_log_channel": "",
-    "bot_log_channel": ""
+    "withdraw_log_channel": "1208040269199441930",
+    "bot_log_channel": "1208358306612117575"
 }
 ```
 
