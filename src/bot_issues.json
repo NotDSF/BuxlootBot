@@ -1,0 +1,17 @@
+{
+    "issues": [
+        {
+            "name": "I invited someone and didn't recieve my invite",
+            "explationation": "Make sure your link is your own (NOT **discord.gg/buxloot**)\nHeres how:",
+            "image": "https://i.imgur.com/0mjSIDs.gif"
+        },
+        {
+            "name": "InviteTracker says I have x invites, BuxBot doesn't",
+            "explationation": "BuxBot is a new bot, it will only track **new invites**"
+        },
+        {
+            "name": "How do I increase my multipler",
+            "explationation": "Your multipler increases every x invites, more invites, higher multipler"
+        }
+    ]
+}

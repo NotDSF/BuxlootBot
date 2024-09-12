@@ -1,0 +1,43 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mongodb"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id             String  @id @default(uuid()) @map("_id")
+  DiscordID      String  @unique
+  Invites        Int     @default(0)
+  Points         Float   @default(0)
+  Withdrew       Int     @default(0)
+  PointsEarned   Float   @default(0)
+  RobloxUsername String?
+}
+
+model Giveaway {
+  id            String   @id @default(uuid()) @map("_id")
+  GiveawayID    String   @unique
+  ChannelID     String
+  Entries       String[] @default([])
+  Expires       Int
+  MiniumInvites Int
+  MiniumPoints  Int?
+  Description   String
+  Winners       Int
+  Host          String
+}
+
+model Promocode {
+  id      String   @id @default(uuid()) @map("_id")
+  Uses    String[] @default([])
+  MaxUses Int
+  Expires Int?
+  Reward  Int
+  Code    String @unique
+}

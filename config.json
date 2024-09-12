@@ -1,0 +1,23 @@
+{
+    "points_per_hour": 1,
+    "server_id": "1203876218810925157",
+    "keywords": [
+        "earn",
+        "R$",
+        "buxloot",
+        "at",
+        "buxloot.com"
+    ],
+    "multiplier": {
+        "every": 30,
+        "multiply": 0.1
+    },
+    "keyword_threshold": 3,
+    "minimum_withdrawal": 1,
+    "bot_status": "buxloot.com",
+    "moderators": [],
+    "administators": ["1056818884398809118"],
+    "bot_commands_channel": "1193385316732637254",
+    "withdraw_log_channel": "1208040269199441930",
+    "bot_log_channel": "1208358306612117575"
+}
